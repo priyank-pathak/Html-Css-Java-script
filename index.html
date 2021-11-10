@@ -4,16 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analogal clock using pure js  </title>
+    <title>Animated login form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="clockContainer">
-    <div id="hour"></div>
-    <div id="minute"></div>
-    <div id="second"></div>
-</div>
+   <h2>login form</h2>
 
-  <script src="script.js"></script>
-  </body>
+   <div class="all">
+       <div class="un">
+       <div id="circle">
+           <img src="file:///F:/files/Mera%20bharat/img_avatar2.png" alt="avatar__image">
+       
+    </div>
+
+       <div class="lable">
+       <label>Username</label>
+    </div>
+
+    <div class="user">
+        <input type="text" name="user" placeholder="enter username">
+    </div>
+
+    <div class="lable">
+        <label>Password</label>
+    </div>
+
+    <div class="pass" >
+        <input type="password" placeholder="enter password" required>
+    </div>
+
+    <button class="btn" onclick="clickFunction()">
+        login
+    </button>
+
+    <div class="checkbox">
+        <input type="checkbox" name="checkbox">
+        <label class="ball">Remember me</label>
+    </div>
+</div>
+    <div class="footer">
+        <button class="btn_2" ondblclick="dblFunction()">
+            cancel
+        </button>
+        <div class="forgot">
+            Forgot <a href="#">password?</a>
+        </div>
+     
+    
+   </div>
+
+
+ </div>
+ 
+<script src="animated.js"></script>
+
+</body>
 </html>
