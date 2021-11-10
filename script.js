@@ -1,15 +1,27 @@
-setInterval(() => {
-    date  = new Date();
-    htime = date.getHours();
-    mtime = date.getMinutes();
-    stime = date.getSeconds();
-    hrotation = 30*htime + mtime/2;
-    mrotation = 6*mtime;
-    srotation = 6*stime;
+let screen = document.getElementById("screen");
+buttons = document.querySelectorAll("button");
+let screenValue = "";
+for (item of buttons) {
+    item.addEventListener('click',(e)=>{
+        buttonText  = e.target.innerText;
+        console.log("Button text is",buttonText);
+        if(buttonText == '*'){
+           
+           screenValue += buttonText;
 
-    hour.style.transform    = `rotate(${hrotation}deg)`;
-
-    minute.style.transform  = `rotate(${mrotation}deg)`;
-
-    second.style.transform  = `rotate(${srotation}deg)`;
-}, 1000);
+           screen.value = screenValue;
+        }
+        else if (buttonText == 'C') {
+            screenValue = "";
+            screen.value = screenValue;
+        
+        }
+        else if(buttonText == "="){
+            screen.value = eval(screenValue);
+        }
+        else{
+            screenValue += buttonText;
+            screen.value = screenValue;
+        }
+    })
+}

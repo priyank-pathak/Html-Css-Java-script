@@ -1,100 +1,33 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-body{
-    overflow:hidden ;
-    animation: bodyShake linear 2s infinite;
+.container{
+    text-align: center;
+    
 }
 
-.sky{
-    height: 100vh;
-    width: 100%;
-   
-    position: absolute;
-    background-image: url("file:///F:/files/Mera%20bharat/Car%20Aminated/background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+table{
+ margin: auto;       
 }
-.trees{
-height: 100vh;
-width: 100%;
-background-image:url("file:///F:/files/Mera%20bharat/Car%20Aminated/trees.png") ;
-background-repeat:no-repeat;
-background-size: cover;
-position:absolute;
-padding-left: 30px;
-top: -144px;
+input{
+    width: 410px;
+    height: 50px;
+    border: 2px solid greenyellow;
+    border-radius: 21px;
+    outline: none;
+    font-size: 26px;
 }
-.track{
-height: 106vh;
-width: 800vw;
-background-image: url("file:///F:/files/Mera%20bharat/Car%20Aminated/track.png");
-background-repeat:repeat-x;
-position:absolute;
-top: 70vh;
-animation: carMove linear 0.6s infinite;
+button{
+    font-size: 28px;
+    background: #978fa0;
+    width: 100px;
+    height:54px;
+    border: 2px solid green ;
+    border-radius: 15px;
+    cursor: pointer;
+    
 }
-.car{
-height: 100px;
-width:380px;
-background-image: url("file:///F:/files/Mera%20bharat/Car%20Aminated/car_body.png");
-background-repeat: no-repeat;
-background-size: cover;
-position: absolute;
-left: 444px;
-bottom: 222px;
-animation: shake linear 3s infinite;
-}
-.wheel1 img{
-width: 76px;
-left: 40px;
-top: 41px;
-position: relative;
-animation: wheelRotation linear 0.2s infinite;
-}
-.wheel2 img{
-    width: 74px;
-    margin-left: 236px;
-    top: -43px;
-    position: relative;
-    animation: wheelRotation linear 0.2s infinite;
-}
-
-@keyframes wheelRotation {
-    100%{
-        transform: rotate(360deg);
-    }
-   
-}
-@keyframes carMove {
-    100%{
-        transform: translateX(-500vw);
-    }
-   
-}
-
-@keyframes shake {
-    0%{
-    transform: translateY(-5px);
-    }
-    50%{
-        transform: translateY(5px);
-    }
-    100%
-    {
-        transform: translateY(-5px);
-    }
-}
-@keyframes bodyShake {
-    0%{
-    transform: translateY(-5px);
-    }
-    50%{
-        transform: translateY(5px);
-    }
-    100%
-    {
-        transform: translateY(-5px);
-    }
+.calculator{
+    padding: 25px;
+    background-color: #ff99f7;
+    display: inline-block;
+    border-radius: 20px;
+    border: 3px solid ;
 }
