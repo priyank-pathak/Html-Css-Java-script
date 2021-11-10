@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#clockContainer{
+    position: relative;
+   
+    ;
+    height: 40vw;
+    width: 40vw;
+    background-image:url("file:///F:/files/Mera%20bharat/anlog%20clock.png") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    margin-top: 30.7px;
+
+}
+#hour,#minute,#second{
+    position: absolute;
+    background:black ;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+#hour{
+width: 1.5%;
+height: 28%;
+top: 17%;
+left: 48.85%;
+opacity: 0.8;
+
+}
+#minute{
+    width: 1.8%;
+    height: 30%;
+    top: 16%;
+    left: 48.9%;
+    opacity: 0.8;
+    
+   
+}
+#second{
+    width: 1%;
+    height: 35%;
+    top: 10%;
+    left: 49.25%;
+    opacity: 0.8;
+    
+}
