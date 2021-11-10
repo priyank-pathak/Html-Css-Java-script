@@ -1,63 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="container">
-    <h1>Calculator By PriyankPathak</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider with javascript</title>
 
-<div class="calculator">
-    <input type="text" name="screen" id="screen">
-<table>
-    <tr>
-    <td><button>)</button>
-        <button>(</button>
-        <button>C</button>
-        <button>%</button>
-    </td>
-</tr>
+    <link rel="stylesheet" href="style.css" />
 
-<tr>
-    <td><button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>*</button>
-    </td>
-</tr>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha38-UHRtZLI+pbxhHCWpIt77Bi1L4ZtiqrqD80Kn4Z8NSRyMA2Fd33n5dQ81WUE00s/"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="picContainer">
+      <h2>JavaScript Image Slider</h2>
+      <div id="info"></div>
 
-<tr>
-    <td><button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button> - </button>
-    </td>
-</tr>
+      <div id="image1" class="img">
+        <img
+          src="file:///C:/Users/DELL/Downloads/image1.jpg"
+          alt="photo1"
+        />
+      </div>
 
-<tr>
-    <td><button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>+</button>
-    </td>
-</tr>
+      <div id="image2" class="img">
+        <img
+          src="file:///C:/Users/DELL/Downloads/image2.jpg"
+          alt="photo2"
+        />
+      </div>
 
-<tr>
-    <td><button>0</button>
-        <button>.</button>
-        <button>/</button>
-        <button> =</button>
-    </td>
-</tr>
-</table>
-</div>
-</div>
+      <div id="image3" class="img">
+        <img
+          src="file:///C:/Users/DELL/Downloads/image3.jpg"
+          alt="photo3"
+        />
+      </div>
 
-   
-</body>
-<script src="script.js"></script>
+      <div id="image4" class="img">
+        <img
+          src="file:///C:/Users/DELL/Downloads/image4.jpg"
+          alt="photo4"
+        />
+      </div>
+    </div>
+
+    <!--Navigation arrow-->
+
+    <div class="left" onclick="left()">
+      <i class="fas fa-angle-left"></i>
+    </div>
+    <div class="right" onclick="right()">
+      <i class="fas fa-angle-right"></i>
+    </div>
+
+    <div class="dots">
+      <div class="dot a1"></div>
+      <div class="dot a2"></div>
+      <div class="dot a3"></div>
+      <div class="dot a4"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>

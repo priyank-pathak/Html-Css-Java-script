@@ -1,33 +1,128 @@
-.container{
-    text-align: center;
-    
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans");
+body,
+html {
+  padding: 0;
+  margin: 0;
+  background: #ececec;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.picContainer {
+  position: relative;
+  width: 650px;
+  height: 400px;
+  border: 5px solid #262626;
+  background: black;
+  border-radius: 10px;
+  box-shadow: 0px 50px 100px #262626;
+}
+img {
+  width: 650px;
+  height: 400px;
+  transition: 1s;
+  border-radius: 10px;
+}
+.img {
+  width: 650px;
+  height: 400px;
+  position: absolute;
+  z-index: 0;
+  transition: 1s;
+  margin-top: -68px;
+}
+.right {
+  position: absolute;
+  height: 54%;
+  width: 60px;
+  z-index: 99;
+  cursor: pointer;
+  transition: 1s;
+  right: 442px;
+  top: 0;
+  margin-top: 167px;
+  border-radius: 9px;
+  color: #fff;
 }
 
-table{
- margin: auto;       
+.right i {
+  padding-top: 173px;
+  padding-left: 20px;
+  font-size: 37px;
 }
-input{
-    width: 410px;
-    height: 50px;
-    border: 2px solid greenyellow;
-    border-radius: 21px;
-    outline: none;
-    font-size: 26px;
+
+.right:hover {
+  background: rgba(0, 0, 0, 0.2);
 }
-button{
-    font-size: 28px;
-    background: #978fa0;
-    width: 100px;
-    height:54px;
-    border: 2px solid green ;
-    border-radius: 15px;
-    cursor: pointer;
-    
+
+.left {
+  position: absolute;
+  height: 54%;
+  width: 60px;
+  z-index: 99;
+  cursor: pointer;
+  transition: 1s;
+  right: 1033px;
+  top: 0;
+  margin-top: 167px;
+  border-radius: 9px;
+  color: #fff;
 }
-.calculator{
-    padding: 25px;
-    background-color: #ff99f7;
-    display: inline-block;
-    border-radius: 20px;
-    border: 3px solid ;
+.left i {
+  padding-top: 173px;
+  padding-left: 20px;
+  font-size: 37px;
+}
+.left:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+.dot {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 99;
+  transition: 0.5s;
+  background: #333;
+  box-shadow: 0px 0px 5px #fff;
+  margin-bottom: 215px;
+}
+
+.dot.a1 {
+  margin-left: -30px;
+}
+.dot.a2 {
+  margin-left: -10px;
+}
+.dot.a3 {
+  margin-left: 10px;
+}
+.dot.a4 {
+  margin-left: 30px;
+}
+.dot.a1:hover {
+  background: #fff;
+}
+.dot.a2:hover {
+  background: #fff;
+}
+.dot.a3:hover {
+  background: #fff;
+}
+.dot.a4:hover {
+  background: #fff;
+}
+
+#info {
+  position: absolute;
+  top: -65%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Fira Sans", sans-serif;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.75);
 }
