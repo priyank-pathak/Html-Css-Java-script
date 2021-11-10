@@ -1,128 +1,121 @@
-@import url("https://fonts.googleapis.com/css?family=Fira+Sans");
-body,
-html {
-  padding: 0;
-  margin: 0;
-  background: #ececec;
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-}
-.picContainer {
-  position: relative;
-  width: 650px;
-  height: 400px;
-  border: 5px solid #262626;
-  background: black;
-  border-radius: 10px;
-  box-shadow: 0px 50px 100px #262626;
-}
-img {
-  width: 650px;
-  height: 400px;
-  transition: 1s;
-  border-radius: 10px;
-}
-.img {
-  width: 650px;
-  height: 400px;
-  position: absolute;
-  z-index: 0;
-  transition: 1s;
-  margin-top: -68px;
-}
-.right {
-  position: absolute;
-  height: 54%;
-  width: 60px;
-  z-index: 99;
-  cursor: pointer;
-  transition: 1s;
-  right: 442px;
-  top: 0;
-  margin-top: 167px;
-  border-radius: 9px;
-  color: #fff;
-}
-
-.right i {
-  padding-top: 173px;
-  padding-left: 20px;
-  font-size: 37px;
-}
-
-.right:hover {
-  background: rgba(0, 0, 0, 0.2);
-}
-
-.left {
-  position: absolute;
-  height: 54%;
-  width: 60px;
-  z-index: 99;
-  cursor: pointer;
-  transition: 1s;
-  right: 1033px;
-  top: 0;
-  margin-top: 167px;
-  border-radius: 9px;
-  color: #fff;
-}
-.left i {
-  padding-top: 173px;
-  padding-left: 20px;
-  font-size: 37px;
-}
-.left:hover {
-  background: rgba(0, 0, 0, 0.2);
-}
-.dot {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 99;
-  transition: 0.5s;
-  background: #333;
-  box-shadow: 0px 0px 5px #fff;
-  margin-bottom: 215px;
-}
-
-.dot.a1 {
-  margin-left: -30px;
-}
-.dot.a2 {
-  margin-left: -10px;
-}
-.dot.a3 {
-  margin-left: 10px;
-}
-.dot.a4 {
-  margin-left: 30px;
-}
-.dot.a1:hover {
-  background: #fff;
-}
-.dot.a2:hover {
-  background: #fff;
-}
-.dot.a3:hover {
-  background: #fff;
-}
-.dot.a4:hover {
-  background: #fff;
-}
-
-#info {
-  position: absolute;
-  top: -65%;
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: "Fira Sans", sans-serif;
-  font-size: 25px;
-  color: rgba(0, 0, 0, 0.75);
-}
+body {
+    margin: 0;
+    min-width: 250px;
+  }
+  
+  /* Include the padding and border in an element's total width and height */
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Remove margins and padding from the list */
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the list items */
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Set all odd list items to a different color (zebra-stripes) */
+  ul li:nth-child(odd) {
+    background: #f9f9f9;
+  }
+  
+  /* Darker background-color on hover */
+  ul li:hover {
+    background: #ddd;
+  }
+  
+  /* When clicked on, add a background color and strike out text */
+  ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+  /* Add a "checked" mark when clicked on */
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+  
+  /* Style the close button */
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  
+  .close:hover {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: #f44336;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  
+  /* Clear floats after the header */
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the input */
+  input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+  }
+  
+  /* Style the "Add" button */
+  .addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+  }
+  
+  .addBtn:hover {
+    background-color: #bbb;
+  }
